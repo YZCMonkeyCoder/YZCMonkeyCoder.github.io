@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>注释基本概念 | YZCMonkeyCoder&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="&amp;#x6CE8;&amp;#x91CA;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&amp;#x672C;&amp;#x5C0F;&amp;#x8282;&amp;#x77E5;&amp;#x8BC6;&amp;#x70B9;:
+&amp;#x3010;&amp;#x638C;&amp;#x63E1;&amp;#x3011;&amp;#x4EC0;&amp;#x4E48;&amp;#x662F;&amp;#x6CE8;&amp;#x91CA;
+&amp;#x3010;&amp;#x4E86;&amp;#x89E3;&amp;#x30">
+<meta property="og:type" content="article">
+<meta property="og:title" content="注释基本概念">
+<meta property="og:url" content="http://yoursite.com/2014/02/23/注释基本概念/index.html">
+<meta property="og:site_name" content="YZCMonkeyCoder's Blog">
+<meta property="og:description" content="&amp;#x6CE8;&amp;#x91CA;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&amp;#x672C;&amp;#x5C0F;&amp;#x8282;&amp;#x77E5;&amp;#x8BC6;&amp;#x70B9;:
+&amp;#x3010;&amp;#x638C;&amp;#x63E1;&amp;#x3011;&amp;#x4EC0;&amp;#x4E48;&amp;#x662F;&amp;#x6CE8;&amp;#x91CA;
+&amp;#x3010;&amp;#x4E86;&amp;#x89E3;&amp;#x30">
+<meta property="og:image" content="http://yoursite.com/2014/02/23/注释基本概念/1061190755980015.jpg">
+<meta property="og:image" content="http://yoursite.com/2014/02/23/注释基本概念/Snip20140223_01.png">
+<meta property="og:updated_time" content="2014-02-23T14:03:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="注释基本概念">
+<meta name="twitter:description" content="&amp;#x6CE8;&amp;#x91CA;&amp;#x57FA;&amp;#x672C;&amp;#x6982;&amp;#x5FF5;&amp;#x672C;&amp;#x5C0F;&amp;#x8282;&amp;#x77E5;&amp;#x8BC6;&amp;#x70B9;:
+&amp;#x3010;&amp;#x638C;&amp;#x63E1;&amp;#x3011;&amp;#x4EC0;&amp;#x4E48;&amp;#x662F;&amp;#x6CE8;&amp;#x91CA;
+&amp;#x3010;&amp;#x4E86;&amp;#x89E3;&amp;#x30">
+<meta name="twitter:image" content="http://yoursite.com/2014/02/23/注释基本概念/1061190755980015.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="YZCMonkeyCoder&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.png" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">YZC Monkey Coder</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">Come On!</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/Home">博客首页</a></li>
+                        
+                            <li><a href="/works">作品展示</a></li>
+                        
+                            <li><a href="/about">留言打卡</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                            <li><a href="/tags">静心阅读</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=0quoseDn6uGStL2qv7O7vvyxvb8" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/YZCMonkeyCoder" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="#" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="#" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
+                            
+                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/C语言/" style="font-size: 20px;">C语言</a> <a href="/tags/MacOSX系统操作/" style="font-size: 13.33px;">MacOSX系统操作</a> <a href="/tags/Printf函数/" style="font-size: 11.67px;">Printf函数</a> <a href="/tags/Printf函数基本概念/" style="font-size: 10px;">Printf函数基本概念</a> <a href="/tags/Printf函数注意事项/" style="font-size: 10px;">Printf函数注意事项</a> <a href="/tags/Scanf函数/" style="font-size: 13.33px;">Scanf函数</a> <a href="/tags/Scanf函数基本概念/" style="font-size: 10px;">Scanf函数基本概念</a> <a href="/tags/Scanf函数实现原理/" style="font-size: 10px;">Scanf函数实现原理</a> <a href="/tags/Scanf函数注意事项/" style="font-size: 10px;">Scanf函数注意事项</a> <a href="/tags/Web/" style="font-size: 10px;">Web</a> <a href="/tags/Xcode/" style="font-size: 11.67px;">Xcode</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 11.67px;">html</a> <a href="/tags/html常见标签/" style="font-size: 11.67px;">html常见标签</a> <a href="/tags/iOS/" style="font-size: 18.33px;">iOS</a> <a href="/tags/iOS开发体验/" style="font-size: 15px;">iOS开发体验</a> <a href="/tags/不同类型常量的表示方法/" style="font-size: 10px;">不同类型常量的表示方法</a> <a href="/tags/关键字/" style="font-size: 10px;">关键字</a> <a href="/tags/变量内存分析/" style="font-size: 10px;">变量内存分析</a> <a href="/tags/变量初始化和引用/" style="font-size: 10px;">变量初始化和引用</a> <a href="/tags/变量基本概念/" style="font-size: 10px;">变量基本概念</a> <a href="/tags/变量的作用域/" style="font-size: 10px;">变量的作用域</a> <a href="/tags/复合运算符/" style="font-size: 10px;">复合运算符</a> <a href="/tags/常量的基本概念/" style="font-size: 10px;">常量的基本概念</a> <a href="/tags/开发工具/" style="font-size: 10px;">开发工具</a> <a href="/tags/开发环境配置/" style="font-size: 10px;">开发环境配置</a> <a href="/tags/数据及数据类型/" style="font-size: 10px;">数据及数据类型</a> <a href="/tags/标识符命名规范/" style="font-size: 10px;">标识符命名规范</a> <a href="/tags/标识符的基本概念/" style="font-size: 10px;">标识符的基本概念</a> <a href="/tags/求余运算符/" style="font-size: 10px;">求余运算符</a> <a href="/tags/注释基本概念/" style="font-size: 10px;">注释基本概念</a> <a href="/tags/注释的使用/" style="font-size: 10px;">注释的使用</a> <a href="/tags/算术运算符/" style="font-size: 10px;">算术运算符</a> <a href="/tags/类型转换问题/" style="font-size: 10px;">类型转换问题</a> <a href="/tags/自增运算符/" style="font-size: 10px;">自增运算符</a> <a href="/tags/解析markdown语法/" style="font-size: 10px;">解析markdown语法</a> <a href="/tags/计算机程序/" style="font-size: 10px;">计算机程序</a> <a href="/tags/计算机语言/" style="font-size: 10px;">计算机语言</a> <a href="/tags/赋值运算符/" style="font-size: 10px;">赋值运算符</a> <a href="/tags/运算符/" style="font-size: 16.67px;">运算符</a> <a href="/tags/运算符的优先级以及结合性/" style="font-size: 10px;">运算符的优先级以及结合性</a> <a href="/tags/运算符的概念以及分类/" style="font-size: 10px;">运算符的概念以及分类</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://luuman.github.io/">name</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">YZC Monkey Coder</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.png" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">YZC Monkey Coder</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">Come On!</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/Home">博客首页</a></li>
+                
+                    <li><a href="/works">作品展示</a></li>
+                
+                    <li><a href="/about">留言打卡</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                    <li><a href="/tags">静心阅读</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=0quoseDn6uGStL2qv7O7vvyxvb8" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/YZCMonkeyCoder" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="#" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
+                    
+                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-注释基本概念" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/02/23/注释基本概念/" class="article-date">
+      <time datetime="2014-02-23T13:33:06.000Z" itemprop="datePublished">2014-02-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      注释基本概念
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/C语言/">C语言</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C语言/">C语言</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/注释基本概念/">注释基本概念</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="&#x6CE8;&#x91CA;&#x57FA;&#x672C;&#x6982;&#x5FF5;"><a href="#&#x6CE8;&#x91CA;&#x57FA;&#x672C;&#x6982;&#x5FF5;" class="headerlink" title="&#x6CE8;&#x91CA;&#x57FA;&#x672C;&#x6982;&#x5FF5;"></a>&#x6CE8;&#x91CA;&#x57FA;&#x672C;&#x6982;&#x5FF5;</h3><h4 id="&#x672C;&#x5C0F;&#x8282;&#x77E5;&#x8BC6;&#x70B9;"><a href="#&#x672C;&#x5C0F;&#x8282;&#x77E5;&#x8BC6;&#x70B9;" class="headerlink" title="&#x672C;&#x5C0F;&#x8282;&#x77E5;&#x8BC6;&#x70B9;:"></a>&#x672C;&#x5C0F;&#x8282;&#x77E5;&#x8BC6;&#x70B9;:</h4><ol>
+<li>&#x3010;&#x638C;&#x63E1;&#x3011;&#x4EC0;&#x4E48;&#x662F;&#x6CE8;&#x91CA;</li>
+<li>&#x3010;&#x4E86;&#x89E3;&#x3011;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528;&#x6CE8;&#x91CA;?</li>
+<li>&#x3010;&#x4E86;&#x89E3;&#x3011;&#x5E94;&#x7528;&#x6CE8;&#x91CA;&#x7684;&#x76EE;&#x7684;&#x548C;&#x5E94;&#x7528;&#x573A;&#x666F;</li>
+<li>&#x3010;&#x7406;&#x89E3;&#x3011;&#x6CE8;&#x91CA;&#x7684;&#x7279;&#x70B9;</li>
+</ol>
+<a id="more"></a>
+<h4 id="1-&#x4EC0;&#x4E48;&#x662F;&#x6CE8;&#x91CA;"><a href="#1-&#x4EC0;&#x4E48;&#x662F;&#x6CE8;&#x91CA;" class="headerlink" title="1.&#x4EC0;&#x4E48;&#x662F;&#x6CE8;&#x91CA;"></a>1.&#x4EC0;&#x4E48;&#x662F;&#x6CE8;&#x91CA;</h4><ul>
+<li><p>&#x6CE8;&#x91CA;&#x662F;&#x5728;&#x6240;&#x6709;&#x8BA1;&#x7B97;&#x673A;&#x8BED;&#x8A00;&#x4E2D;&#x90FD;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x4E2A;&#x6982;&#x5FF5;&#xFF0C;&#x4ECE;&#x5B57;&#x9762;&#x4E0A;&#x770B;&#xFF0C;&#x5C31;&#x662F;&#x6CE8;&#x89E3;&#x3001;&#x89E3;&#x91CA;&#x7684;&#x610F;&#x601D;</p>
+</li>
+<li><p>&#x6CE8;&#x91CA;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x89E3;&#x91CA;&#x67D0;&#x4E00;&#x6BB5;&#x7A0B;&#x5E8F;&#x6216;&#x8005;&#x67D0;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF0C;&#x65B9;&#x4FBF;&#x7A0B;&#x5E8F;&#x5458;&#x4E4B;&#x95F4;&#x7684;&#x4EA4;&#x6D41;&#x3002;&#x5047;&#x5982;&#x6211;&#x5199;&#x5B8C;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x540E;&#xFF0C;&#x52A0;&#x4E0A;&#x76F8;&#x5E94;&#x7684;&#x6CE8;&#x91CA;&#xFF0C;&#x90A3;&#x4E48;&#x522B;&#x4EBA;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x6CE8;&#x91CA;&#x5C31;&#x77E5;&#x9053;&#x6211;&#x7684;&#x8FD9;&#x884C;&#x4EE3;&#x7801;&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7528;&#x7684;</p>
+</li>
+<li>&#x6CE8;&#x91CA;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;&#x6587;&#x5B57;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x53EF;&#x4EE5;&#x5199;&#x4E2D;&#x6587;</li>
+<li>&#x5728;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x4E2D;&#x6CE8;&#x91CA;&#x4E00;&#x822C;&#x662F;&#x7EFF;&#x8272;</li>
+</ul>
+<blockquote>
+<p>&#x660C;&#x54E5;&#x63D0;&#x793A;:</p>
+<ul>
+<li>&#x521D;&#x5B66;&#x8005;&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x517B;&#x6210;&#x4E60;&#x60EF;&#xFF1A;&#x5148;&#x5199;&#x6CE8;&#x91CA;&#x518D;&#x5199;&#x4EE3;&#x7801;&#x3002;</li>
+<li>&#x5C06;&#x81EA;&#x5DF1;&#x7684;&#x601D;&#x60F3;&#x901A;&#x8FC7;&#x6CE8;&#x91CA;&#x5148;&#x6574;&#x7406;&#x51FA;&#x6765;&#xFF0C;&#x5728;&#x7528;&#x4EE3;&#x7801;&#x53BB;&#x4F53;&#x73B0;&#x3002;</li>
+<li>&#x56E0;&#x4E3A;&#x4EE3;&#x7801;&#x4EC5;&#x4EC5;&#x662F;&#x601D;&#x60F3;&#x7684;&#x4E00;&#x79CD;&#x4F53;&#x73B0;&#x5F62;&#x5F0F;&#x800C;&#x5DF2;&#x3002;</li>
+</ul>
+</blockquote>
+<hr>
+<h4 id="2-&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528;&#x6CE8;&#x91CA;"><a href="#2-&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528;&#x6CE8;&#x91CA;" class="headerlink" title="2.&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528;&#x6CE8;&#x91CA;?"></a>2.&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528;&#x6CE8;&#x91CA;?</h4><ul>
+<li>&#x65B0;&#x6D6A;&#x5FAE;&#x535A;&#x8868;&#x60C5;&#x952E;&#x76D8;&#x201D;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x201D;&#x6587;&#x4EF6;&#x4EE3;&#x7801;</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div></pre></td><td class="code"><pre><div class="line">typedef enum{</div><div class="line">    HMToolBarBtnTypeNear = 100,</div><div class="line">    HMToolBarBtnTypeNormal,</div><div class="line">    HMToolBarBtnTypeEmoji,</div><div class="line">    HMToolBarBtnTypeLXH</div><div class="line">}HMToolBarBtnType;</div><div class="line"></div><div class="line">@interface HMEmoticonsController ()&lt;UICollectionViewDataSource, UICollectionViewDelegate&gt;</div><div class="line">@property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *layout;</div><div class="line">@property (weak, nonatomic) IBOutlet UICollectionView *emoticonView;</div><div class="line">- (IBAction)emoticonToolbarClick:(UIBarButtonItem *)sender;</div><div class="line">@end</div><div class="line"></div><div class="line">@implementation HMEmoticonsController</div><div class="line"></div><div class="line">- (void)viewDidLoad {</div><div class="line">    [super viewDidLoad];</div><div class="line">    NSUInteger col = 7;</div><div class="line">    NSUInteger row = 3;</div><div class="line">    NSUInteger margin = 10;</div><div class="line">    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;</div><div class="line">    CGFloat emoticonWidth = (screenWidth - (col + 1) * margin) / col;</div><div class="line">    CGFloat emoticonHeight = emoticonWidth;</div><div class="line">    self.layout.itemSize = CGSizeMake(emoticonWidth, emoticonHeight);</div><div class="line">    self.layout.minimumInteritemSpacing = margin;</div><div class="line">    self.layout.minimumLineSpacing = margin;</div><div class="line">    self.layout.sectionInset = UIEdgeInsetsMake(margin, margin, margin, margin);</div><div class="line">    self.layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;</div><div class="line">    self.emoticonView.pagingEnabled = YES;</div><div class="line">}</div><div class="line">- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView</div><div class="line">{</div><div class="line">    return [HMEmoticonsManager shareManager].emotionSections.count;</div><div class="line">}</div><div class="line"></div><div class="line">- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section</div><div class="line">{</div><div class="line">    HMEmoticonSection *categoryScetion = [HMEmoticonsManager shareManager].emotionSections[section];</div><div class="line">    return categoryScetion.emoticons.count;</div><div class="line">}</div><div class="line">- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath</div><div class="line">{</div><div class="line">    HMEmoticonCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[HMEmoticonCell identifier] forIndexPath:indexPath];</div><div class="line">     HMEmoticonSection *categoryScetion = [HMEmoticonsManager shareManager].emotionSections[indexPath.section];</div><div class="line">    HMEmoticon *emoticon = categoryScetion.emoticons[indexPath.item];</div><div class="line">    cell.emoticon = emoticon;</div><div class="line">    return cell;</div><div class="line">}</div><div class="line"></div><div class="line">#pragma mark - UICollectionViewDelegate</div><div class="line">- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath</div><div class="line">{</div><div class="line">    HMEmoticonSection *categoryScetion = [HMEmoticonsManager shareManager].emotionSections[indexPath.section];</div><div class="line">    HMEmoticon *emoticon = categoryScetion.emoticons[indexPath.item];</div><div class="line">    HMEmoticonSection *nearSection = [HMEmoticonsManager shareManager].emotionSections[0];</div><div class="line">    BOOL contain = NO;</div><div class="line">    for (HMEmoticon *oldEmoticon in nearSection.emoticons) {</div><div class="line">        if ([oldEmoticon.chs isEqualToString:emoticon.chs] ||</div><div class="line">            [oldEmoticon.emoji isEqualToString:emoticon.emoji]) {</div><div class="line">            contain = YES;</div><div class="line">            break;</div><div class="line">        }</div><div class="line">    }</div><div class="line">    if (!contain) {</div><div class="line">        [nearSection.emoticons removeObjectAtIndex:nearSection.emoticons.count - 2];</div><div class="line">        [nearSection.emoticons insertObject:emoticon atIndex:0];</div><div class="line">        [self.emoticonView reloadData];</div><div class="line">    }</div><div class="line">    if ([self.delegate respondsToSelector:@selector(emoticonsController:emoticon:)]) {</div><div class="line">        [self.delegate emoticonsController:self emoticon:emoticon];</div><div class="line">    }</div><div class="line">}</div><div class="line"></div><div class="line">- (IBAction)emoticonToolbarClick:(UIBarButtonItem *)sender</div><div class="line">{</div><div class="line">    NSUInteger count = 0;</div><div class="line">    // Emoji = 2</div><div class="line">    for (int i = 0; i &lt; sender.tag; i++) { // 0 1</div><div class="line">        NSNumber *currentSectionCount = [HMEmoticonsManager shareManager].categroySections[i];</div><div class="line">        count += currentSectionCount.intValue; // 7</div><div class="line">    }</div><div class="line">    CGRect rect = self.emoticonView.frame;</div><div class="line">    rect.origin.x = count * rect.size.width;</div><div class="line">    [self.emoticonView scrollRectToVisible:rect animated:YES];</div><div class="line">}</div></pre></td></tr></table></figure>
+<ul>
+<li>&#x89C2;&#x540E;&#x611F;?<ul>
+<li><img src="/2014/02/23/&#x6CE8;&#x91CA;&#x57FA;&#x672C;&#x6982;&#x5FF5;/1061190755980015.jpg" alt="1061190755980015"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="3-&#x5E94;&#x7528;&#x6CE8;&#x91CA;&#x7684;&#x76EE;&#x7684;&#x548C;&#x5E94;&#x7528;&#x573A;&#x666F;"><a href="#3-&#x5E94;&#x7528;&#x6CE8;&#x91CA;&#x7684;&#x76EE;&#x7684;&#x548C;&#x5E94;&#x7528;&#x573A;&#x666F;" class="headerlink" title="3.&#x5E94;&#x7528;&#x6CE8;&#x91CA;&#x7684;&#x76EE;&#x7684;&#x548C;&#x5E94;&#x7528;&#x573A;&#x666F;"></a>3.&#x5E94;&#x7528;&#x6CE8;&#x91CA;&#x7684;&#x76EE;&#x7684;&#x548C;&#x5E94;&#x7528;&#x573A;&#x666F;</h4><ul>
+<li>&#x5E38;&#x89C1;&#x7528;&#x6CD5;&#x4E00;(&#x89E3;&#x91CA;&#x4EE3;&#x7801;):</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">- (UIBarButtonItem *)initWithNorImage:(NSString *)norimage higImage:(NSString *)higImage title:(NSString *)title target:(id)target action:(SEL)action</div><div class="line">{</div><div class="line">    // 1.&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6309;&#x94AE;</div><div class="line">    UIButton *btn = [[UIButton alloc] init];</div><div class="line">    // 2.&#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x7684;&#x9ED8;&#x8BA4;&#x56FE;&#x7247;&#x548C;&#x9AD8;&#x4EAE;&#x56FE;&#x7247;</div><div class="line">    if (norimage != nil &amp;&amp;</div><div class="line">        ![norimage isEqualToString:@&quot;&quot;]) {</div><div class="line">        // &#x56FE;&#x7247;&#x4E0D;&#x4E3A;&#x7A7A;</div><div class="line">        [btn setImage:[UIImage imageNamed:norimage] forState:UIControlStateNormal];</div><div class="line">    }</div><div class="line">    if (higImage != nil &amp;&amp;</div><div class="line">        ![higImage isEqualToString:@&quot;&quot;]) {</div><div class="line">        // &#x56FE;&#x7247;&#x4E0D;&#x4E3A;&#x7A7A;</div><div class="line">        [btn setImage:[UIImage imageNamed:higImage] forState:UIControlStateHighlighted];</div><div class="line">    }</div><div class="line">    // &#x8BBE;&#x7F6E;&#x6807;&#x9898;</div><div class="line">    [btn setTitle:title forState:UIControlStateNormal];</div><div class="line"></div><div class="line">    // 3.&#x76D1;&#x542C;&#x6309;&#x94AE;&#x7684;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;</div><div class="line">    [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];</div><div class="line">    // 4.&#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x7684;frame</div><div class="line">    // &#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x63A7;&#x4EF6;&#x7684;sizeToFit&#x65B9;&#x6CD5;&#x6765;&#x81EA;&#x52A8;&#x8C03;&#x6574;&#x63A7;&#x4EF6;&#x7684;&#x5927;&#x5C0F;</div><div class="line">    [btn sizeToFit];</div><div class="line"></div><div class="line">    // 5.&#x6839;&#x636E;&#x6309;&#x94AE;&#x521B;&#x5EFA;BarButtonItem</div><div class="line">    return [[UIBarButtonItem alloc] initWithCustomView:btn];</div><div class="line">}</div></pre></td></tr></table></figure>
+<ul>
+<li>&#x5E38;&#x89C1;&#x7528;&#x6CD5;&#x4E8C;(&#x505A;&#x51FD;&#x6570;&#x8BF4;&#x660E;):</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> *  &#x521B;&#x5EFA;item</div><div class="line"> *</div><div class="line"> *  @param norimage &#x9ED8;&#x8BA4;&#x72B6;&#x6001;&#x7684;&#x56FE;&#x7247;</div><div class="line"> *  @param higImage &#x9AD8;&#x4EAE;&#x72B6;&#x6001;&#x7684;&#x56FE;&#x7247;</div><div class="line"> *  @param title    &#x6807;&#x9898;</div><div class="line"> *</div><div class="line"> *  @return &#x521B;&#x5EFA;&#x597D;&#x7684;item</div><div class="line"> */</div><div class="line">- (UIBarButtonItem *)initWithNorImage:(NSString *)norimage higImage:(NSString *)higImage title:(NSString *)title target:(id)target action:(SEL)action</div><div class="line">{</div><div class="line">    // 1.&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6309;&#x94AE;</div><div class="line">    UIButton *btn = [[UIButton alloc] init];</div><div class="line">    // 2.&#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x7684;&#x9ED8;&#x8BA4;&#x56FE;&#x7247;&#x548C;&#x9AD8;&#x4EAE;&#x56FE;&#x7247;</div><div class="line">    if (norimage != nil &amp;&amp;</div><div class="line">        ![norimage isEqualToString:@&quot;&quot;]) {</div><div class="line">        // &#x56FE;&#x7247;&#x4E0D;&#x4E3A;&#x7A7A;</div><div class="line">        [btn setImage:[UIImage imageNamed:norimage] forState:UIControlStateNormal];</div><div class="line">    }</div><div class="line">    if (higImage != nil &amp;&amp;</div><div class="line">        ![higImage isEqualToString:@&quot;&quot;]) {</div><div class="line">        // &#x56FE;&#x7247;&#x4E0D;&#x4E3A;&#x7A7A;</div><div class="line">        [btn setImage:[UIImage imageNamed:higImage] forState:UIControlStateHighlighted];</div><div class="line">    }</div><div class="line">    // &#x8BBE;&#x7F6E;&#x6807;&#x9898;</div><div class="line">    [btn setTitle:title forState:UIControlStateNormal];</div><div class="line"></div><div class="line">    // 3.&#x76D1;&#x542C;&#x6309;&#x94AE;&#x7684;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;</div><div class="line">    [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];</div><div class="line">    // 4.&#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x7684;frame</div><div class="line">    // &#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x63A7;&#x4EF6;&#x7684;sizeToFit&#x65B9;&#x6CD5;&#x6765;&#x81EA;&#x52A8;&#x8C03;&#x6574;&#x63A7;&#x4EF6;&#x7684;&#x5927;&#x5C0F;</div><div class="line">    [btn sizeToFit];</div><div class="line"></div><div class="line">    // 5.&#x6839;&#x636E;&#x6309;&#x94AE;&#x521B;&#x5EFA;BarButtonItem</div><div class="line">    return [[UIBarButtonItem alloc] initWithCustomView:btn];</div><div class="line">}</div></pre></td></tr></table></figure>
+<ul>
+<li>&#x5E38;&#x89C1;&#x7528;&#x6CD5;&#x4E09;(&#x505A;&#x601D;&#x8DEF;&#x5206;&#x6790;):<ul>
+<li><img src="/2014/02/23/&#x6CE8;&#x91CA;&#x57FA;&#x672C;&#x6982;&#x5FF5;/Snip20140223_01.png" alt="Snip20140223_01"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="4-&#x6CE8;&#x91CA;&#x7684;&#x7279;&#x70B9;"><a href="#4-&#x6CE8;&#x91CA;&#x7684;&#x7279;&#x70B9;" class="headerlink" title="4.&#x6CE8;&#x91CA;&#x7684;&#x7279;&#x70B9;"></a>4.&#x6CE8;&#x91CA;&#x7684;&#x7279;&#x70B9;</h4><ul>
+<li>&#x6CE8;&#x91CA;&#x662F;&#x5199;&#x7ED9;&#x4EBA;&#x770B;&#x7684;&#xFF0C;&#x4E0D;&#x662F;&#x7ED9;&#x8BA1;&#x7B97;&#x673A;&#x770B;&#x7684;&#x3002;&#x8BA1;&#x7B97;&#x673A;&#x600E;&#x4E48;&#x53EF;&#x80FD;&#x770B;&#x5F97;&#x6211;&#x4EEC;&#x5199;&#x7684;&#x4E2D;&#x6587;&#x3002;&#x56E0;&#x6B64;&#x5F53;&#x7F16;&#x8BD1;&#x7A0B;&#x5E8F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x5C06;&#x6CE8;&#x91CA;&#x7F16;&#x8BD1;&#x5230;.o&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x4E2D;</li>
+<li>&#x4ECE;.o&#x6587;&#x4EF6;&#x7684;&#x5927;&#x5C0F;&#x53EF;&#x4EE5;&#x95F4;&#x63A5;&#x770B;&#x51FA;&#x6CE8;&#x91CA;&#x540E;&#x7684;&#x4EE3;&#x7801;&#x5E76;&#x6CA1;&#x6709;&#x88AB;&#x7F16;&#x8BD1;</li>
+<li>&#x68C0;&#x67E5;&#x4EE3;&#x7801;&#x7684;&#x4F5C;&#x7528;</li>
+<li>&#x6392;&#x9664;&#x9519;&#x8BEF;</li>
+</ul>
+<hr>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2014/02/23/注释基本概念/">注释基本概念</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 YZC Monkey Coder 的个人博客">YZC Monkey Coder</a></p>
+        <p><span>发布时间:</span>2014年02月23日 - 21时33分</p>
+        <p><span>最后更新:</span>2014年02月23日 - 22时03分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2014/02/23/注释基本概念/" title="注释基本概念">http://yoursite.com/2014/02/23/注释基本概念/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2014/02/23/注释基本概念/　　作者: YZC Monkey Coder" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2014/02/23/注释的使用/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          注释的使用
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/02/22/标示符命名规范/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">标示符命名规范</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#注释基本概念"><span class="toc-number">1.</span> <span class="toc-text">注释基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#本小节知识点"><span class="toc-number">1.1.</span> <span class="toc-text">本小节知识点:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-什么是注释"><span class="toc-number">1.2.</span> <span class="toc-text">1.什么是注释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-为什么要使用注释"><span class="toc-number">1.3.</span> <span class="toc-text">2.为什么要使用注释?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-应用注释的目的和应用场景"><span class="toc-number">1.4.</span> <span class="toc-text">3.应用注释的目的和应用场景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-注释的特点"><span class="toc-number">1.5.</span> <span class="toc-text">4.注释的特点</span></a></li></ol></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2014/02/23/注释基本概念/" data-title="注释基本概念" data-url="http://yoursite.com/2014/02/23/注释基本概念/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"null"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2014/02/23/注释的使用/" title="上一篇: 注释的使用">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2014/02/22/标示符命名规范/" title="下一篇: 标示符命名规范">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/10/12/CSS基础知识和CSS的3种样式/">CSS基础知识和CSS的3种样式</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/11/HTML5的基本语法-常见的标签-二/">HTML5的基本语法-常见的标签-(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/10/HTML5的基本语法-常见的标签-一/">HTML5的基本语法-常见的标签(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/09/HTML5的开发-网页的介绍和HTML开发工具的安装/">HTML5的开发-网页的介绍和HTML开发工具的安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/08/HTML5的开发前奏/">HTML5的开发前奏</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/19/iOS开发体验4/">iOS开发体验4</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/19/iOS开发体验3/">iOS开发体验3</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/19/iOS开发体验2/">iOS开发体验2</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/19/iOS开发体验1/">iOS开发体验1</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/13/C语言介绍/">C语言介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/08/hexo解析markdown的标题时遇到的问题/">hexo解析markdown的标题时遇到的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/28/自增运算符/">自增运算符</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/28/复合运算符/">复合运算符</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/28/赋值运算符/">赋值运算符</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/27/类型转换问题/">类型转换问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/27/求余运算符/">求余运算符</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/27/算术运算符/">算术运算符</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/27/运算符的优先级以及结合性/">运算符的优先级以及结合性</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/27/运算符的概念以及分类/">运算符的概念以及分类</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/26/Scanf函数实现原理/">Scanf函数实现原理</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/26/Scanf函数注意事项/">Scanf函数注意事项</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/26/Scanf函数基本概念/">Scanf函数基本概念</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/26/Printf函数注意事项/">Printf函数注意事项</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/26/Printf函数基本概念/">Printf函数基本概念</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/26/变量内存分析/">变量内存分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/26/变量的作用域/">变量的作用域</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/26/变量初始化和引用/">变量初始化和引用</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/25/变量基本概念/">变量基本概念</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/25/不同类型常量的表示方法/">不同类型常量的表示方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/25/常量的基本概念/">常量的基本概念</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/25/数据及数据类型/">数据及数据类型</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/23/注释的使用/">注释的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/23/注释基本概念/">注释基本概念</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/22/标示符命名规范/">标示符命名规范</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/22/标识符的基本概念/">标识符的基本概念</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/22/关键字/">关键字</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/21/多语言对比/">多语言对比</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/21/项目打开、运行方法/">项目打开、运行方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/20/程序运行过程-简单版/">程序运行过程</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/20/第一个C语言程序/">第一个C语言程序</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/19/C语言现状及学习重难点/">C语言现状及学习重难点</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/19/计算机程序/">计算机程序</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/18/iOS开发环境的配置/">iOS开发环境的配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/18/MacOSX系统操作3/">MacOSX系统操作3</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/18/MacOSX系统操作2/">MacOSX系统操作2</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/17/MacOSX系统操作/">MacOSX系统操作</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/16/MacOSX常见设置/">MacOSX常见设置</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/15/MacOSX系统介绍/">MacOSX系统介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/15/iOS设备发展史/">iOS设备发展史</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/14/iOS开发概述/">iOS开发概述</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2014 YZC Monkey Coder
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >海贼到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
