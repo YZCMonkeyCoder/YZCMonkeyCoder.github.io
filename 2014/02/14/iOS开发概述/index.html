@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>iOS开发概述 | YZCMonkeyCoder&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="iOS&amp;#x5F00;&amp;#x53D1;&amp;#x6982;&amp;#x8FF0;&amp;#x672C;&amp;#x5C0F;&amp;#x8282;&amp;#x77E5;&amp;#x8BC6;&amp;#x70B9;:
+&amp;#x3010;&amp;#x4E86;&amp;#x89E3;&amp;#x3011;&amp;#x4EC0;&amp;#x4E48;&amp;#x662F;iOS ?
+&amp;#x3010;&amp;#x4E86;&amp;#x89E3;&amp;#x3011;&amp;#x4EC0;&amp;#x4E48;&amp;#x66">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS开发概述">
+<meta property="og:url" content="http://yoursite.com/2014/02/14/iOS开发概述/index.html">
+<meta property="og:site_name" content="YZCMonkeyCoder's Blog">
+<meta property="og:description" content="iOS&amp;#x5F00;&amp;#x53D1;&amp;#x6982;&amp;#x8FF0;&amp;#x672C;&amp;#x5C0F;&amp;#x8282;&amp;#x77E5;&amp;#x8BC6;&amp;#x70B9;:
+&amp;#x3010;&amp;#x4E86;&amp;#x89E3;&amp;#x3011;&amp;#x4EC0;&amp;#x4E48;&amp;#x662F;iOS ?
+&amp;#x3010;&amp;#x4E86;&amp;#x89E3;&amp;#x3011;&amp;#x4EC0;&amp;#x4E48;&amp;#x66">
+<meta property="og:image" content="http://yoursite.com/2014/02/14/iOS开发概述/Snip20140214_01.png">
+<meta property="og:image" content="http://yoursite.com/2014/02/14/iOS开发概述/Snip20140214_02.jpeg">
+<meta property="og:image" content="http://yoursite.com/2014/02/14/iOS开发概述/Snip20140214_03.jpeg">
+<meta property="og:image" content="http://yoursite.com/2014/02/14/iOS开发概述/Snip20140214_04.jpeg">
+<meta property="og:image" content="http://yoursite.com/2014/02/14/iOS开发概述/Snip20140214_05.png">
+<meta property="og:image" content="http://yoursite.com/2014/02/14/iOS开发概述/Snip20140214_06.jpeg">
+<meta property="og:image" content="http://yoursite.com/2014/02/14/iOS开发概述/Snip20140214_07.jpeg">
+<meta property="og:image" content="http://yoursite.com/2014/02/14/iOS开发概述/Snip20140214_08.jpeg">
+<meta property="og:image" content="http://yoursite.com/2014/02/14/iOS开发概述/Snip20140214_09.jpeg">
+<meta property="og:image" content="http://yoursite.com/2014/02/14/iOS开发概述/Snip20140214_10.jpeg">
+<meta property="og:updated_time" content="2017-02-17T06:41:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="iOS开发概述">
+<meta name="twitter:description" content="iOS&amp;#x5F00;&amp;#x53D1;&amp;#x6982;&amp;#x8FF0;&amp;#x672C;&amp;#x5C0F;&amp;#x8282;&amp;#x77E5;&amp;#x8BC6;&amp;#x70B9;:
+&amp;#x3010;&amp;#x4E86;&amp;#x89E3;&amp;#x3011;&amp;#x4EC0;&amp;#x4E48;&amp;#x662F;iOS ?
+&amp;#x3010;&amp;#x4E86;&amp;#x89E3;&amp;#x3011;&amp;#x4EC0;&amp;#x4E48;&amp;#x66">
+<meta name="twitter:image" content="http://yoursite.com/2014/02/14/iOS开发概述/Snip20140214_01.png">
+  
+    <link rel="alternative" href="/atom.xml" title="YZCMonkeyCoder&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.png" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">YZC Monkey Coder</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">Come On!</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/Home">博客首页</a></li>
+                        
+                            <li><a href="/works">作品展示</a></li>
+                        
+                            <li><a href="/about">留言打卡</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                            <li><a href="/tags">静心阅读</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=0quoseDn6uGStL2qv7O7vvyxvb8" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/YZCMonkeyCoder" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="#" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="#" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
+                            
+                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/MacOSX系统操作/" style="font-size: 15px;">MacOSX系统操作</a> <a href="/tags/Web/" style="font-size: 10px;">Web</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 12.5px;">html</a> <a href="/tags/html常见标签/" style="font-size: 12.5px;">html常见标签</a> <a href="/tags/iOS/" style="font-size: 20px;">iOS</a> <a href="/tags/iOS开发体验/" style="font-size: 17.5px;">iOS开发体验</a> <a href="/tags/开发工具/" style="font-size: 10px;">开发工具</a> <a href="/tags/开发环境配置/" style="font-size: 10px;">开发环境配置</a> <a href="/tags/解析markdown语法/" style="font-size: 10px;">解析markdown语法</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://luuman.github.io/">name</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">YZC Monkey Coder</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.png" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">YZC Monkey Coder</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">Come On!</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/Home">博客首页</a></li>
+                
+                    <li><a href="/works">作品展示</a></li>
+                
+                    <li><a href="/about">留言打卡</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                    <li><a href="/tags">静心阅读</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=0quoseDn6uGStL2qv7O7vvyxvb8" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/YZCMonkeyCoder" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="#" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
+                    
+                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-iOS开发概述" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/02/14/iOS开发概述/" class="article-date">
+      <time datetime="2014-02-14T12:33:43.000Z" itemprop="datePublished">2014-02-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      iOS开发概述
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/iOS/">iOS</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;"><a href="#iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;" class="headerlink" title="iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;"></a>iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;</h3><h4 id="&#x672C;&#x5C0F;&#x8282;&#x77E5;&#x8BC6;&#x70B9;"><a href="#&#x672C;&#x5C0F;&#x8282;&#x77E5;&#x8BC6;&#x70B9;" class="headerlink" title="&#x672C;&#x5C0F;&#x8282;&#x77E5;&#x8BC6;&#x70B9;:"></a>&#x672C;&#x5C0F;&#x8282;&#x77E5;&#x8BC6;&#x70B9;:</h4><ol>
+<li>&#x3010;&#x4E86;&#x89E3;&#x3011;&#x4EC0;&#x4E48;&#x662F;iOS ?</li>
+<li>&#x3010;&#x4E86;&#x89E3;&#x3011;&#x4EC0;&#x4E48;&#x662F;iOS&#x5F00;&#x53D1; ?</li>
+<li>&#x3010;&#x4E86;&#x89E3;&#x3011;&#x4E3B;&#x6D41;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x6709;&#x54EA;&#x4E9B;?</li>
+<li>&#x3010;&#x4E86;&#x89E3;&#x3011;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x9009;&#x62E9;iOS&#x5F00;&#x53D1; ?</li>
+<li>&#x3010;&#x4E86;&#x89E3;&#x3011;&#x5B66;&#x4E60;iOS&#x5F00;&#x53D1;&#x7684;&#x51C6;&#x5907; ?</li>
+<li>&#x3010;&#x4E86;&#x89E3;&#x3011;&#x83B7;&#x53D6;Mac OS X</li>
+</ol>
+<a id="more"></a>
+<h4 id="1-&#x4EC0;&#x4E48;&#x662F;iOS"><a href="#1-&#x4EC0;&#x4E48;&#x662F;iOS" class="headerlink" title="1.&#x4EC0;&#x4E48;&#x662F;iOS ?"></a>1.&#x4EC0;&#x4E48;&#x662F;iOS ?</h4><ul>
+<li><p>iOS&#x662F;&#x4E00;&#x6B3E;&#x7531;&#x82F9;&#x679C;&#x516C;&#x53F8;&#x5F00;&#x53D1;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;(OS&#x662F;Operating System&#x7684;&#x7B80;&#x79F0;),&#x5C31;&#x50CF;&#x5E73;&#x65F6;&#x5728;&#x7535;&#x8111;&#x4E0A;&#x7528;&#x7684;Windows XP&#x3001;Windows 7,&#x90FD;&#x662F;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</p>
+</li>
+<li><p>&#x90A3;&#x4EC0;&#x4E48;&#x662F;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5462;?</p>
+<ul>
+<li>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5176;&#x5B9E;&#x662F;&#x4E00;&#x79CD;&#x8F6F;&#x4EF6;,&#x662F;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x5728;&#x786C;&#x4EF6;(&#x7535;&#x8111;&#x3001;&#x624B;&#x673A;&#x7B49;)&#x4E0A;&#x7684;&#x6700;&#x57FA;&#x672C;&#x7684;&#x7CFB;&#x7EDF;&#x8F6F;&#x4EF6;,&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x8F6F;&#x4EF6;&#x90FD;&#x5FC5;&#x987B;&#x5728;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x652F;&#x6301;&#x4E0B;&#x624D;&#x80FD;&#x8FD0;&#x884C;</li>
+<li>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5B89;&#x88C5;&#x5728;&#x4EC0;&#x4E48;&#x5730;&#x65B9;?</li>
+<li>&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;&#x5728;&#x4EC0;&#x4E48;&#x5730;&#x65B9;?</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<h6 id="&#x7528;&#x6237;&#x6253;&#x5F00;&#x67D0;&#x4E2A;&#x5E94;&#x7528;&#x8F6F;&#x4EF6;&#xFF0C;&#x5728;&#x8F6F;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x8F6F;&#x4EF6;&#x4F1A;&#x4E0D;&#x65AD;&#x5730;&#x8DDF;&#x5E95;&#x5C42;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x63A5;&#x7740;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4F1A;&#x63A7;&#x5236;&#x786C;&#x4EF6;&#x53BB;&#x505A;&#x4E00;&#x4E9B;&#x4E8B;&#x60C5;&#x6765;&#x6EE1;&#x8DB3;&#x7528;&#x6237;&#x7684;&#x9700;&#x6C42;"><a href="#&#x7528;&#x6237;&#x6253;&#x5F00;&#x67D0;&#x4E2A;&#x5E94;&#x7528;&#x8F6F;&#x4EF6;&#xFF0C;&#x5728;&#x8F6F;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x8F6F;&#x4EF6;&#x4F1A;&#x4E0D;&#x65AD;&#x5730;&#x8DDF;&#x5E95;&#x5C42;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x63A5;&#x7740;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4F1A;&#x63A7;&#x5236;&#x786C;&#x4EF6;&#x53BB;&#x505A;&#x4E00;&#x4E9B;&#x4E8B;&#x60C5;&#x6765;&#x6EE1;&#x8DB3;&#x7528;&#x6237;&#x7684;&#x9700;&#x6C42;" class="headerlink" title="&#x7528;&#x6237;&#x6253;&#x5F00;&#x67D0;&#x4E2A;&#x5E94;&#x7528;&#x8F6F;&#x4EF6;&#xFF0C;&#x5728;&#x8F6F;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x8F6F;&#x4EF6;&#x4F1A;&#x4E0D;&#x65AD;&#x5730;&#x8DDF;&#x5E95;&#x5C42;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x63A5;&#x7740;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4F1A;&#x63A7;&#x5236;&#x786C;&#x4EF6;&#x53BB;&#x505A;&#x4E00;&#x4E9B;&#x4E8B;&#x60C5;&#x6765;&#x6EE1;&#x8DB3;&#x7528;&#x6237;&#x7684;&#x9700;&#x6C42;"></a>&#x7528;&#x6237;&#x6253;&#x5F00;&#x67D0;&#x4E2A;&#x5E94;&#x7528;&#x8F6F;&#x4EF6;&#xFF0C;&#x5728;&#x8F6F;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x8F6F;&#x4EF6;&#x4F1A;&#x4E0D;&#x65AD;&#x5730;&#x8DDF;&#x5E95;&#x5C42;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x63A5;&#x7740;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4F1A;&#x63A7;&#x5236;&#x786C;&#x4EF6;&#x53BB;&#x505A;&#x4E00;&#x4E9B;&#x4E8B;&#x60C5;&#x6765;&#x6EE1;&#x8DB3;&#x7528;&#x6237;&#x7684;&#x9700;&#x6C42;</h6><h6 id="&#x6BD4;&#x5982;-&#x5F53;&#x6211;&#x4EEC;&#x6253;&#x5F00;&#x624B;&#x673A;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x7167;&#x76F8;&#x673A;&#x8F6F;&#x4EF6;&#xFF0C;&#x6309;&#x4E0B;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;&#x62CD;&#x7167;&#x6309;&#x94AE;&#x65F6;&#xFF0C;&#x7167;&#x76F8;&#x673A;&#x8F6F;&#x4EF6;&#x4F1A;&#x901A;&#x77E5;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x201C;&#x5582;&#xFF0C;&#x6211;&#x9700;&#x8981;&#x62CD;&#x7167;&#xFF01;&#x201D;&#xFF0C;&#x63A5;&#x7740;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5C31;&#x4F1A;&#x63A7;&#x5236;&#x624B;&#x673A;&#x4E0A;&#x7684;&#x6444;&#x50CF;&#x5934;&#x8FDB;&#x884C;&#x805A;&#x7126;&#x3001;&#x62CD;&#x7167;"><a href="#&#x6BD4;&#x5982;-&#x5F53;&#x6211;&#x4EEC;&#x6253;&#x5F00;&#x624B;&#x673A;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x7167;&#x76F8;&#x673A;&#x8F6F;&#x4EF6;&#xFF0C;&#x6309;&#x4E0B;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;&#x62CD;&#x7167;&#x6309;&#x94AE;&#x65F6;&#xFF0C;&#x7167;&#x76F8;&#x673A;&#x8F6F;&#x4EF6;&#x4F1A;&#x901A;&#x77E5;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x201C;&#x5582;&#xFF0C;&#x6211;&#x9700;&#x8981;&#x62CD;&#x7167;&#xFF01;&#x201D;&#xFF0C;&#x63A5;&#x7740;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5C31;&#x4F1A;&#x63A7;&#x5236;&#x624B;&#x673A;&#x4E0A;&#x7684;&#x6444;&#x50CF;&#x5934;&#x8FDB;&#x884C;&#x805A;&#x7126;&#x3001;&#x62CD;&#x7167;" class="headerlink" title="&#x6BD4;&#x5982;:&#x5F53;&#x6211;&#x4EEC;&#x6253;&#x5F00;&#x624B;&#x673A;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x7167;&#x76F8;&#x673A;&#x8F6F;&#x4EF6;&#xFF0C;&#x6309;&#x4E0B;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;&#x62CD;&#x7167;&#x6309;&#x94AE;&#x65F6;&#xFF0C;&#x7167;&#x76F8;&#x673A;&#x8F6F;&#x4EF6;&#x4F1A;&#x901A;&#x77E5;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x201C;&#x5582;&#xFF0C;&#x6211;&#x9700;&#x8981;&#x62CD;&#x7167;&#xFF01;&#x201D;&#xFF0C;&#x63A5;&#x7740;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5C31;&#x4F1A;&#x63A7;&#x5236;&#x624B;&#x673A;&#x4E0A;&#x7684;&#x6444;&#x50CF;&#x5934;&#x8FDB;&#x884C;&#x805A;&#x7126;&#x3001;&#x62CD;&#x7167;"></a>&#x6BD4;&#x5982;:&#x5F53;&#x6211;&#x4EEC;&#x6253;&#x5F00;&#x624B;&#x673A;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x7167;&#x76F8;&#x673A;&#x8F6F;&#x4EF6;&#xFF0C;&#x6309;&#x4E0B;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;&#x62CD;&#x7167;&#x6309;&#x94AE;&#x65F6;&#xFF0C;&#x7167;&#x76F8;&#x673A;&#x8F6F;&#x4EF6;&#x4F1A;&#x901A;&#x77E5;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x201C;&#x5582;&#xFF0C;&#x6211;&#x9700;&#x8981;&#x62CD;&#x7167;&#xFF01;&#x201D;&#xFF0C;&#x63A5;&#x7740;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5C31;&#x4F1A;&#x63A7;&#x5236;&#x624B;&#x673A;&#x4E0A;&#x7684;&#x6444;&#x50CF;&#x5934;&#x8FDB;&#x884C;&#x805A;&#x7126;&#x3001;&#x62CD;&#x7167;</h6><h6 id="&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x7528;&#x6237;&#x4E0E;&#x786C;&#x4EF6;&#x7684;&#x63A5;&#x53E3;&#x3001;&#x6865;&#x6881;&#xFF0C;&#x5B83;&#x4E3A;&#x5E94;&#x7528;&#x8F6F;&#x4EF6;&#x548C;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E86;&#x63A7;&#x5236;&#x3001;&#x8BBF;&#x95EE;&#x786C;&#x4EF6;&#x7684;&#x624B;&#x6BB5;"><a href="#&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x7528;&#x6237;&#x4E0E;&#x786C;&#x4EF6;&#x7684;&#x63A5;&#x53E3;&#x3001;&#x6865;&#x6881;&#xFF0C;&#x5B83;&#x4E3A;&#x5E94;&#x7528;&#x8F6F;&#x4EF6;&#x548C;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E86;&#x63A7;&#x5236;&#x3001;&#x8BBF;&#x95EE;&#x786C;&#x4EF6;&#x7684;&#x624B;&#x6BB5;" class="headerlink" title="&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x7528;&#x6237;&#x4E0E;&#x786C;&#x4EF6;&#x7684;&#x63A5;&#x53E3;&#x3001;&#x6865;&#x6881;&#xFF0C;&#x5B83;&#x4E3A;&#x5E94;&#x7528;&#x8F6F;&#x4EF6;&#x548C;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E86;&#x63A7;&#x5236;&#x3001;&#x8BBF;&#x95EE;&#x786C;&#x4EF6;&#x7684;&#x624B;&#x6BB5;"></a>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x7528;&#x6237;&#x4E0E;&#x786C;&#x4EF6;&#x7684;&#x63A5;&#x53E3;&#x3001;&#x6865;&#x6881;&#xFF0C;&#x5B83;&#x4E3A;&#x5E94;&#x7528;&#x8F6F;&#x4EF6;&#x548C;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E86;&#x63A7;&#x5236;&#x3001;&#x8BBF;&#x95EE;&#x786C;&#x4EF6;&#x7684;&#x624B;&#x6BB5;</h6></blockquote>
+<p><img src="/2014/02/14/iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;/Snip20140214_01.png" alt="Snip20140214_01"></p>
+<ul>
+<li>iOS&#x4E0E;Win7&#x7B49;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x5DEE;&#x5F02;?<ul>
+<li>XP&#x3001;Win7&#x662F;PC&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;,&#x4E5F;&#x5C31;&#x662F;&#x8FD0;&#x884C;&#x5728;&#x7535;&#x8111;&#x4E0A;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</li>
+<li>iOS&#x662F;&#x624B;&#x6301;&#x8BBE;&#x5907;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;,&#x4E5F;&#x5C31;&#x662F;&#x8FD0;&#x884C;&#x5728;&#x624B;&#x673A;&#x4E0A;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;&#x76EE;&#x524D;&#x642D;&#x8F7D;&#x8FD9;&#x6B3E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x8BBE;&#x5907;&#x6709;: iPhone&#x3001;iPad&#x3001;iPod touch&#x3001;iPad mini&#x3001;Apple TV&#x3001;iWatch</li>
+<li>&#x5728;iPad&#x7B49;&#x8BBE;&#x5907;&#x51FA;&#x73B0;&#x4E4B;&#x524D;,&#x5F53;&#x65F6;&#x53EA;&#x6709;iPhone&#x642D;&#x8F7D;&#x4E86;&#x8FD9;&#x6B3E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;,&#x79F0;&#x4E3A;&#x201C;iPhone OS&#x201D;,&#x540E;&#x6765; iPad&#x7B49;&#x8BBE;&#x5907;&#x4E5F;&#x642D;&#x8F7D;&#x4E86;&#x8FD9;&#x6B3E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;,&#x6539;&#x540D;&#x4E3A;&#x201C;iOS&#x201D;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="2-&#x4EC0;&#x4E48;&#x662F;iOS&#x5F00;&#x53D1;"><a href="#2-&#x4EC0;&#x4E48;&#x662F;iOS&#x5F00;&#x53D1;" class="headerlink" title="2.&#x4EC0;&#x4E48;&#x662F;iOS&#x5F00;&#x53D1; ?"></a>2.&#x4EC0;&#x4E48;&#x662F;iOS&#x5F00;&#x53D1; ?</h4><ul>
+<li><p>iOS&#x5F00;&#x53D1;&#x5C31;&#x662F;&#x5F00;&#x53D1;&#x8FD0;&#x884C;&#x5728;&#x642D;&#x8F7D;iOS&#x7CFB;&#x7EDF;&#x4E0A;&#x7684;&#x5E94;&#x7528;&#x6216;&#x8005;&#x6E38;&#x620F;&#x8F6F;&#x4EF6;,&#x6BD4;&#x5982;&#x624B;&#x673A;QQ&#x3001;&#x5FAE;&#x535A;&#x6216;&#x8005;&#x6E38;&#x620F;&#x3002;&#x8BF4;&#x767D;&#x4E86;,&#x5C31;&#x662F;&#x5F00;&#x53D1;&#x624B;&#x673A;&#x8F6F;&#x4EF6;&#x3002;</p>
+</li>
+<li><p>iOS&#x5F00;&#x53D1;&#x53EF;&#x4EE5;&#x5F52;&#x7C7B;&#x5230;&#x201C;&#x79FB;&#x52A8;&#x5F00;&#x53D1;&#x201D;(&#x624B;&#x673A;&#x5F00;&#x53D1;)&#x9886;&#x57DF;</p>
+</li>
+<li><p>&#x4ECE;&#x4E8B;iOS&#x5F00;&#x53D1;&#x7684;&#x4EBA;&#x5458;,&#x53EF;&#x4EE5;&#x79F0;&#x4E4B;&#x4E3A;&#x201C;iOS&#x8F6F;&#x4EF6;&#x653B;&#x57CE;&#x72EE;&#x201D;&#x6216;&#x201C;iOS&#x7A0B;&#x5E8F;&#x733F;(&#x5A9B;)&#x201D;</p>
+</li>
+</ul>
+<hr>
+<h4 id="3-&#x4E3B;&#x6D41;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;"><a href="#3-&#x4E3B;&#x6D41;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;" class="headerlink" title="3.&#x4E3B;&#x6D41;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;"></a>3.&#x4E3B;&#x6D41;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</h4><ul>
+<li>&#x76EE;&#x524D;&#x5E94;&#x7528;&#x5728;&#x624B;&#x673A;&#x4E0A;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E3B;&#x8981;&#x6709;&#xFF1A;iOS &#x3001;Android&#xFF08;&#x5B89;&#x5353;&#xFF09;&#x3001;Black Berry&#xFF08;&#x9ED1;&#x8393;&#xFF09;OS&#x3001;Windows Phone&#x3001;Symbian&#xFF08;&#x585E;&#x73ED;&#xFF09;</li>
+</ul>
+<hr>
+<h4 id="4-&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x9009;&#x62E9;iOS&#x5F00;&#x53D1;"><a href="#4-&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x9009;&#x62E9;iOS&#x5F00;&#x53D1;" class="headerlink" title="4.&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x9009;&#x62E9;iOS&#x5F00;&#x53D1; ?"></a>4.&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x9009;&#x62E9;iOS&#x5F00;&#x53D1; ?</h4><ul>
+<li><p>&#x624B;&#x673A;&#x5C06;&#x662F;&#x4EBA;&#x7C7B;&#x6700;&#x79BB;&#x4E0D;&#x5F00;&#x7684;&#x8BBE;&#x5907;&#x4E4B;&#x4E00;</p>
+<ul>
+<li>&#x5E26;&#x7535;&#x8111;&#x7684;&#x540E;&#x679C;<br><img src="/2014/02/14/iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;/Snip20140214_02.jpeg" alt="Snip20140214_02"></li>
+</ul>
+</li>
+<li><p>&#x5E02;&#x573A;&#x5BF9;&#x79FB;&#x52A8;&#x5F00;&#x53D1;&#x4EBA;&#x624D;&#x7684;&#x9700;&#x6C42;&#x91CF;&#x662F;&#x975E;&#x5E38;&#x5927;&#x7684;</p>
+</li>
+<li><p>&#x85AA;&#x8D44;&#x9AD8;</p>
+<ul>
+<li><img src="/2014/02/14/iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;/Snip20140214_03.jpeg" alt="Snip20140214_03"></li>
+</ul>
+</li>
+<li><p>&#x524D;&#x666F;&#x597D;</p>
+<ul>
+<li><img src="/2014/02/14/iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;/Snip20140214_04.jpeg" alt="Snip20140214_04"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="4-&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x662F;Android"><a href="#4-&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x662F;Android" class="headerlink" title="4.&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x662F;Android?"></a>4.&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x662F;Android?</h4><table>
+<thead>
+<tr>
+<th>&#x5BF9;&#x6BD4;</th>
+<th>iOS</th>
+<th>Android</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x7CFB;&#x7EDF;&#x67B6;&#x6784;</td>
+<td>&#x57FA;&#x4E8E;UNIX</td>
+<td>&#x57FA;&#x4E8E;Linux&#x7684;&#x865A;&#x62DF;&#x673A;</td>
+</tr>
+<tr>
+<td>&#x7CFB;&#x7EDF;&#x5B89;&#x5168;&#x6027;</td>
+<td>&#x5B89;&#x5168;&#x3001;&#x7A33;&#x5B9A;</td>
+<td>&#x5B89;&#x5168;&#x6027;&#x7565;&#x4F4E;</td>
+</tr>
+<tr>
+<td>&#x5F00;&#x53D1;&#x96BE;&#x6613;&#x5EA6;</td>
+<td>&#x5F3A;&#x5927;&#x7684;SDK</td>
+<td>SDK&#x4E5F;&#x4E0D;&#x5DEE;</td>
+</tr>
+<tr>
+<td>&#x662F;&#x5426;&#x5F00;&#x6E90;</td>
+<td>&#x4E0D;&#x5F00;&#x6E90;</td>
+<td>&#x5F00;&#x6E90;</td>
+</tr>
+<tr>
+<td>&#x8BBE;&#x5907;&#x7684;&#x79CD;&#x7C7B;</td>
+<td>iPhone\iPad&#x7B49;</td>
+<td>&#x6570;&#x4E0D;&#x6E05;&#x7684;&#x8BBE;&#x5907;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>&#x7528;&#x6237;&#x4EBA;&#x7FA4;</td>
+<td>&#x6D88;&#x8D39;&#x80FD;&#x529B;&#x5F3A;&#x7684;&#x9AD8;&#x7AEF;&#x7528;&#x6237;</td>
+<td>&#x5404;&#x79CD;&#x7528;&#x6237;&#x4EBA;&#x7FA4;</td>
+</tr>
+<tr>
+<td>&#x80CC;&#x540E;&#x7684;BOSS</td>
+<td>Apple</td>
+<td>Google</td>
+</tr>
+<tr>
+<td>&#x5E94;&#x7528;&#x5546;&#x5E97;</td>
+<td>AppStore(08&#x5E74;&#x4E0A;&#x7EBF;)</td>
+<td>GooglePlay</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>1.&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x9009;&#x62E9;android&#x5F00;&#x53D1;?<ul>
+<li>&#x6027;&#x80FD;&#x4E0D;&#x5982;iOS</li>
+<li>&#x5B89;&#x5168;&#x6027;&#x4E0D;&#x5982;iOS</li>
+<li>&#x5F00;&#x53D1;&#x96BE;&#x5EA6;&#x9AD8;&#x4E8E;iOS</li>
+<li>&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x4E0D;&#x5982;iOS</li>
+<li>&#x7528;&#x6237;&#x7FA4;&#x4F53;&#x4E0D;&#x5982;iOS</li>
+<li>&#x76C8;&#x5229;&#x6027;&#x4E0D;&#x5982;iOS</li>
+<li>&#x903C;&#x683C;&#x4E0D;&#x5982;iOS</li>
+<li>&#x2026; &#x2026;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="5-&#x5B66;&#x4E60;iOS&#x5F00;&#x53D1;&#x7684;&#x51C6;&#x5907;"><a href="#5-&#x5B66;&#x4E60;iOS&#x5F00;&#x53D1;&#x7684;&#x51C6;&#x5907;" class="headerlink" title="5.&#x5B66;&#x4E60;iOS&#x5F00;&#x53D1;&#x7684;&#x51C6;&#x5907; ?"></a>5.&#x5B66;&#x4E60;iOS&#x5F00;&#x53D1;&#x7684;&#x51C6;&#x5907; ?</h4><ul>
+<li>&#x79EF;&#x6781;&#x601D;&#x8003;&#x3001;&#x79EF;&#x6781;&#x52A8;&#x624B;&#x3001;&#x80FD;&#x5403;&#x82E6;&#x3001;&#x57F9;&#x517B;&#x5174;&#x8DA3;</li>
+<li>&#x82F1;&#x6587;&#x6C34;&#x5E73;:&#x4E0D;&#x9650;(&#x80FD;&#x770B;&#x61C2;&#x963F;&#x6CE2;&#x5403;&#x7684;)</li>
+<li>&#x4E13;&#x4E1A;:&#x4E0D;&#x9650;</li>
+<li>&#x7F16;&#x7A0B;&#x8BED;&#x8A00;:C&#x8BED;&#x8A00;&#x3001;Objective-C&#x3001;Swift&#x3001;C++(&#x53EF;&#x9009;)</li>
+<li>&#x5F00;&#x53D1;&#x5DE5;&#x5177;:Xcode(Xcode6&#x53CA;&#x4EE5;&#x4E0A;)</li>
+<li>&#x7535;&#x8111;&#x7CFB;&#x7EDF;:Mac OS X(OS X10.10&#x53CA;&#x4EE5;&#x4E0A;)</li>
+<li>&#x771F;&#x673A;&#x8BBE;&#x5907;:iPhone&#x3001;iPad&#x7B49;(&#x53EF;&#x9009;)</li>
+<li>iOS&#x8BC1;&#x4E66;:&#x8C03;&#x8BD5;&#x8BC1;&#x4E66;(&#x53EF;&#x9009;)&#x3001;&#x53D1;&#x5E03;&#x8BC1;&#x4E66;(&#x53EF;&#x9009;)</li>
+<li>&#x884C;&#x52A8;!!!</li>
+<li><img src="/2014/02/14/iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;/Snip20140214_05.png" alt="Snip20140214_05"></li>
+</ul>
+<hr>
+<h4 id="6-&#x83B7;&#x53D6;Mac-OS-X"><a href="#6-&#x83B7;&#x53D6;Mac-OS-X" class="headerlink" title="6.&#x83B7;&#x53D6;Mac OS X"></a>6.&#x83B7;&#x53D6;Mac OS X</h4><table>
+<thead>
+<tr>
+<th>&#x65B9;&#x5F0F;</th>
+<th>&#x7279;&#x70B9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x865A;&#x62DF;&#x673A;</td>
+<td>&#x96F6;&#x6210;&#x672C;&#xFF0C;&#x901F;&#x5EA6;&#x6162;&#xFF0C;&#x5BF9;PC&#x673A;&#x6027;&#x80FD;&#x8981;&#x6C42;&#x9AD8;</td>
+</tr>
+<tr>
+<td>&#x9ED1;&#x82F9;&#x679C;</td>
+<td>&#x6210;&#x672C;&#x4F4E;&#xFF0C;&#x901F;&#x5EA6;&#x5FEB;&#xFF0C;&#x5B89;&#x88C5;&#x96BE;&#x5EA6;&#x5927;</td>
+</tr>
+<tr>
+<td>&#x82F9;&#x679C;&#x8BBE;&#x5907;(iMac\MacBook\Mac mini)</td>
+<td>&#x6210;&#x672C;&#x9AD8;&#xFF0C;&#x901F;&#x5EA6;&#x5FEB;&#xFF0C;&#x65E0;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>iMac <a href="http://www.apple.com/cn/imac/" target="_blank" rel="external">&#x8D2D;&#x4E70;iMac</a> <a href="http://www.apple.com/cn/imac-with-retina/" target="_blank" rel="external">&#x8D2D;&#x4E70;iMac5K</a></li>
+<li><img src="/2014/02/14/iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;/Snip20140214_06.jpeg" alt="Snip20140214_06"></li>
+<li>Macbook Pro <a href="http://www.apple.com/cn/macbook/" target="_blank" rel="external">&#x8D2D;&#x4E70; Book</a> <a href="http://www.apple.com/cn/macbook-pro/" target="_blank" rel="external">&#x8D2D;&#x4E70; Book Pro</a></li>
+<li><p><img src="/2014/02/14/iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;/Snip20140214_07.jpeg" alt="Snip20140214_07"></p>
+</li>
+<li><p>Macbook Air <a href="http://www.apple.com/cn/macbook-air/" target="_blank" rel="external">&#x8D2D;&#x4E70;Book Air</a></p>
+</li>
+<li><p><img src="/2014/02/14/iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;/Snip20140214_08.jpeg" alt="Snip20140214_08"></p>
+</li>
+<li><p>Mac Pro <a href="http://www.apple.com/cn/mac-pro/" target="_blank" rel="external">&#x8D2D;&#x4E70;Pro</a></p>
+</li>
+<li><p><img src="/2014/02/14/iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;/Snip20140214_09.jpeg" alt="Snip20140214_09"></p>
+</li>
+<li><p>Mac mini <a href="http://www.apple.com/cn/mac-mini/" target="_blank" rel="external">&#x8D2D;&#x4E70;mini</a></p>
+</li>
+<li><img src="/2014/02/14/iOS&#x5F00;&#x53D1;&#x6982;&#x8FF0;/Snip20140214_10.jpeg" alt="Snip20140214_10"></li>
+</ul>
+<hr>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2014/02/14/iOS开发概述/">iOS开发概述</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 YZC Monkey Coder 的个人博客">YZC Monkey Coder</a></p>
+        <p><span>发布时间:</span>2014年02月14日 - 20时33分</p>
+        <p><span>最后更新:</span>2017年02月17日 - 14时41分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2014/02/14/iOS开发概述/" title="iOS开发概述">http://yoursite.com/2014/02/14/iOS开发概述/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2014/02/14/iOS开发概述/　　作者: YZC Monkey Coder" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2014/02/15/iOS设备发展史/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          iOS设备发展史
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#iOS开发概述"><span class="toc-number">1.</span> <span class="toc-text">iOS开发概述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#本小节知识点"><span class="toc-number">1.1.</span> <span class="toc-text">本小节知识点:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-什么是iOS"><span class="toc-number">1.2.</span> <span class="toc-text">1.什么是iOS ?</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#用户打开某个应用软件，在软件的使用过程中，这个软件会不断地跟底层的操作系统进行交互，接着操作系统会控制硬件去做一些事情来满足用户的需求"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">用户打开某个应用软件，在软件的使用过程中，这个软件会不断地跟底层的操作系统进行交互，接着操作系统会控制硬件去做一些事情来满足用户的需求</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#比如-当我们打开手机上的一个照相机软件，按下屏幕上的拍照按钮时，照相机软件会通知操作系统“喂，我需要拍照！”，接着操作系统就会控制手机上的摄像头进行聚焦、拍照"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">比如:当我们打开手机上的一个照相机软件，按下屏幕上的拍照按钮时，照相机软件会通知操作系统“喂，我需要拍照！”，接着操作系统就会控制手机上的摄像头进行聚焦、拍照</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#操作系统可以看作用户与硬件的接口、桥梁，它为应用软件和用户提供了控制、访问硬件的手段"><span class="toc-number">1.2.0.3.</span> <span class="toc-text">操作系统可以看作用户与硬件的接口、桥梁，它为应用软件和用户提供了控制、访问硬件的手段</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-什么是iOS开发"><span class="toc-number">1.3.</span> <span class="toc-text">2.什么是iOS开发 ?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-主流操作系统"><span class="toc-number">1.4.</span> <span class="toc-text">3.主流操作系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-为什么要选择iOS开发"><span class="toc-number">1.5.</span> <span class="toc-text">4.为什么要选择iOS开发 ?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-为什么不是Android"><span class="toc-number">1.6.</span> <span class="toc-text">4.为什么不是Android?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-学习iOS开发的准备"><span class="toc-number">1.7.</span> <span class="toc-text">5.学习iOS开发的准备 ?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-获取Mac-OS-X"><span class="toc-number">1.8.</span> <span class="toc-text">6.获取Mac OS X</span></a></li></ol></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2014/02/14/iOS开发概述/" data-title="iOS开发概述" data-url="http://yoursite.com/2014/02/14/iOS开发概述/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"null"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2014/02/15/iOS设备发展史/" title="上一篇: iOS设备发展史">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/10/12/CSS基础知识和CSS的3种样式/">CSS基础知识和CSS的3种样式</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/11/HTML5的基本语法-常见的标签-二/">HTML5的基本语法-常见的标签-(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/10/HTML5的基本语法-常见的标签-一/">HTML5的基本语法-常见的标签(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/09/HTML5的开发-网页的介绍和HTML开发工具的安装/">HTML5的开发-网页的介绍和HTML开发工具的安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/08/HTML5的开发前奏/">HTML5的开发前奏</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/19/iOS开发体验4/">iOS开发体验4</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/19/iOS开发体验3/">iOS开发体验3</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/19/iOS开发体验2/">iOS开发体验2</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/10/19/iOS开发体验1/">iOS开发体验1</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/08/08/hexo解析markdown的标题时遇到的问题/">hexo解析markdown的标题时遇到的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/18/iOS开发环境的配置/">iOS开发环境的配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/18/MacOSX系统操作3/">MacOSX系统操作3</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/18/MacOSX系统操作2/">MacOSX系统操作2</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/17/MacOSX系统操作/">MacOSX系统操作</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/16/MacOSX常见设置/">MacOSX常见设置</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/15/MacOSX系统介绍/">MacOSX系统介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/15/iOS设备发展史/">iOS设备发展史</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/02/14/iOS开发概述/">iOS开发概述</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2017 YZC Monkey Coder
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >海贼到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
